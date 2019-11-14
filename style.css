@@ -3,31 +3,69 @@
 }
 
 #app {
+  display: grid;
   font-size: 5em;
   text-align: center;
   height: 100vh;
+  grid-template-areas: 
+    "header header header header"
+    "nav article-1 article-1 ads"
+    "nav article-2 article-2 ads"
+    "footer footer footer footer"
+    ;
 }
 
 #header {
   background-color: #f3ca40;
+  grid-area: header;
 }
 
 #nav {
   background-color: #4b4e6d;
+  grid-area: nav;
 }
 
 #article-1 {
   background-color: #6a8d92;
+  grid-area: article-1;
 }
 
 #article-2 {
   background-color: yellow;
+  grid-area: article-2;
 }
 
 #ads {
   background-color: #f2a541;
+  grid-area: ads;
 }
 
 #footer {
   background-color: #f08a4b;
+  grid-area: footer;
+}
+
+@media (max-width: 1100px) {
+  #app {
+    grid-template-areas: 
+    "header header header header"
+    "nav nav nav nav"
+    "article-1 article-1 ads ads"
+    "article-2 article-2 ads ads"
+    "footer footer footer footer"
+    ;
+  }
+}
+
+@media (max-width: 500px) {
+  #app {
+    grid-template-areas: 
+    "header header"
+    "nav nav"
+    "article-1 article-1"
+    "article-2 article-2"
+    "ads ads"
+    "footer footer"
+    ;
+  }
 }
