@@ -47,6 +47,7 @@
 
 @media (max-width: 1100px) {
   #app {
+    font-size: 3em;
     grid-template-areas: 
     "header header header header"
     "nav nav nav nav"
@@ -63,8 +64,8 @@
     "header header"
     "nav nav"
     "article-1 article-1"
-    "article-2 article-2"
     "ads ads"
+    "article-2 article-2"
     "footer footer"
     ;
   }
