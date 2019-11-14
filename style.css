@@ -1,0 +1,33 @@
+* {
+  box-sizing: border-box;
+}
+
+#app {
+  font-size: 5em;
+  text-align: center;
+  height: 100vh;
+}
+
+#header {
+  background-color: #f3ca40;
+}
+
+#nav {
+  background-color: #4b4e6d;
+}
+
+#article-1 {
+  background-color: #6a8d92;
+}
+
+#article-2 {
+  background-color: yellow;
+}
+
+#ads {
+  background-color: #f2a541;
+}
+
+#footer {
+  background-color: #f08a4b;
+}
